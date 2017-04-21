@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SwimApp2</string>
+    <string name="launch_app">launch app</string>
+    <string name="find_location">find location</string>
+    <string name="type_here">type here</string>
+    <string name="create_note">create note</string>
+    <string name="subject">subject</string>
+</resources>
