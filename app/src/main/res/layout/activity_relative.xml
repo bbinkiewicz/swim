@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundLight"
+    tools:context="com.example.pc.swimapp.RelativeActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <TextView
+        android:id="@+id/blue"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="centerInParent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/green"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_above="@id/blue"
+        android:text="above [blue]"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/red"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/green"
+        android:layout_alignBaseline="@id/green"
+        android:text="align baseline[green], toRightOf[green]"
+        android:layout_margin="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/orange"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/blue"
+        android:text="alignBottom[blue]"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/purple"
+        android:background="@android:color/holo_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/blue"
+        android:layout_toEndOf="@id/blue"
+        android:layout_toRightOf="@id/blue"
+        android:text="alignBottom[blue],
+toRightOf[blue]"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/header"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/text_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_1"
+        android:layout_margin="5dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orange"
+        android:layout_marginTop="50dp"
+        android:max="100"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/seek_bar"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="top left"
+            android:text="1"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="center"
+            android:text="2"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="bottom right"
+            android:text="3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="top right"
+            android:text="4"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="bottom left"
+            android:text="5"
+            />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:onClick="showSummary"
+        android:id="@+id/btn_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="podsumowanie"/>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_summary"
+        android:text="odpowiedz"/>
+
+
+</RelativeLayout>

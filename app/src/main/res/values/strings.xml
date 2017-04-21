@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SwimApp</string>
+    <string name="author_name">Bartosz Binkiewicz</string>
+    <string name="app_version">SwimApp v1.0</string>
+    <string name="linear_layout">linear</string>
+    <string name="grid_layout">grid </string>
+    <string name="relative_layout">relative</string>
+    <string name="orientation_horizontal">horizontal</string>
+    <string name="view_type_text_view">text view</string>
+    <string name="orientation_vertical">vertical</string>
+    <string name="view_type_edit_text">editText</string>
+    <string name="summary">podsumowanie</string>
+    <string name="back">powrót</string>
+    <string name="send">wyślij</string>
+</resources>
