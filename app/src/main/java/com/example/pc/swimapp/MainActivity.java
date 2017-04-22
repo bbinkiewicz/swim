@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button linearActivityButton;
     Button gridActivityButton;
     Button relativeActivityButton;
+    Button newActivityButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearActivityButton = (Button) findViewById(R.id.linear_activity);
         gridActivityButton = (Button) findViewById(R.id.grid_activity);
         relativeActivityButton = (Button) findViewById(R.id.relative_activity);
+        newActivityButton = (Button) findViewById(R.id.new_activity);
 
         linearActivityButton.setOnClickListener(this);
         gridActivityButton.setOnClickListener(this);
         relativeActivityButton.setOnClickListener(this);
+        newActivityButton.setOnClickListener(this);
 
 
     }
@@ -43,6 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.relative_activity:
                 intent = new Intent(this, RelativeActivity.class);
+                break;
+
+            case R.id.new_activity:
+                intent = new Intent(this, NewActivity.class);
                 break;
 
             default:

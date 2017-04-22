@@ -56,6 +56,13 @@
             android:text="@string/relative_layout"
             />
 
+
     </LinearLayout>
+    <Button
+        android:id="@+id/new_activity"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nowe okno"/>
 
 </RelativeLayout>

@@ -16,6 +16,14 @@
         android:gravity="center_horizontal"
         />
 
+    <Button
+        android:onClick="newActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nowe okno"
+        android:layout_below="@id/header"/>
+
+
 
     <TextView
         android:id="@+id/blue"
@@ -161,6 +169,8 @@ toRightOf[blue]"
         android:layout_height="wrap_content"
         android:layout_above="@id/btn_summary"
         android:text="odpowiedz"/>
+
+
 
 
 </RelativeLayout>

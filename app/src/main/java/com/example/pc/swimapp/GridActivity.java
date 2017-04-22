@@ -1,5 +1,6 @@
 package com.example.pc.swimapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -36,5 +37,10 @@ public class GridActivity extends AppCompatActivity {
        finish();
 
 
+    }
+
+    public void newActivity(View v){
+        Intent intent = new Intent(this, NewActivity.class);
+        startActivity(intent);
     }
 }

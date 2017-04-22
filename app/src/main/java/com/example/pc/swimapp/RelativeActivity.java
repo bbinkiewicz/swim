@@ -88,4 +88,9 @@ public class RelativeActivity extends AppCompatActivity {
         }
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
+
+    public void newActivity(View v){
+        Intent intent = new Intent(this, NewActivity.class);
+        startActivity(intent);
+    }
 }

@@ -12,24 +12,25 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <intent-filter>
-                <action android:name="com.example.action.START"/>
+                <action android:name="com.example.action.START" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".LinearActivity"/>
-
+        <activity android:name=".LinearActivity" />
         <activity android:name=".GridActivity" />
         <activity android:name=".RelativeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".NewActivity"></activity>
     </application>
 
 </manifest>

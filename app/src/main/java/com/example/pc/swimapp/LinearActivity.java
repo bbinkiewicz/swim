@@ -65,4 +65,9 @@ public class LinearActivity extends AppCompatActivity {
     public void backToMainActivity(View view) {
         finish();
     }
+
+    public void newActivity(View v){
+        Intent intent = new Intent(this, NewActivity.class);
+        startActivity(intent);
+    }
 }
