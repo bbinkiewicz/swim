@@ -1,21 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pc.swimapp3.MainActivity">
-
-    <TextView
-        android:id="@+id/tv_header"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:text="@string/header"
-      />
+    tools:context="com.example.pc.swimapp3.DialogShow"
+    android:background="#88677667">
 
     <LinearLayout
-        android:id="@+id/settings"
         android:background="@android:color/darker_gray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +28,7 @@
                 android:textSize="@dimen/text_size_medium"/>
 
             <ImageView
-                android:id="@+id/view_text_color"
+                android:id="@+id/dialog_text_color"
                 android:background="@android:color/black"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -61,7 +51,7 @@
                 android:textSize="@dimen/text_size_medium"/>
 
             <ImageView
-                android:id="@+id/view_background_color"
+                android:id="@+id/dialog_background_color"
                 android:background="@android:color/white"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -85,7 +75,7 @@
 
             <TextView
                 android:gravity="center_vertical|start"
-                android:id="@+id/tv_text_size"
+                android:id="@+id/dialog_text_size"
                 android:layout_width="0dp"
                 android:textSize="@dimen/text_size_medium"
                 android:text="@string/text_size_medium"
@@ -93,24 +83,15 @@
                 android:layout_weight="1"/>
         </LinearLayout>
 
+        <Button
+            android:id="@+id/dialog_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/close"/>
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_customize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/customize"
-        android:layout_below="@id/settings"
-        android:layout_centerHorizontal="true"/>
 
-    <Button
-
-        android:id="@+id/btn_show_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/show_list"
-        android:layout_below="@id/btn_customize"
-        android:layout_centerHorizontal="true"
-        />
 
 </RelativeLayout>

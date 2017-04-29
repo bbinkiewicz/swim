@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.swimapp3.PickerActivity">
+
+
+
+    <LinearLayout
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="textVisiblePassword"
+                android:maxLength="15"
+                android:id="@+id/et_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="nagłówek"
+                />
+
+            <Button
+                android:id="@+id/btn_change_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/change"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_color"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <Button
+                android:id="@+id/btn_text_color"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/choose"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/font_size"
+                android:textSize="@dimen/text_size_medium"/>
+
+           <Spinner
+               android:id="@+id/text_size_spinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/background_color"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <Button
+                android:id="@+id/btn_bg_color"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/choose"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_applay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"/>
+    </LinearLayout>
+
+</RelativeLayout>
