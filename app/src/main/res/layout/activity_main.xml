@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.swimapp3.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/header"
+      />
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_color"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <ImageView
+                android:id="@+id/view_text_color"
+                android:background="@android:color/black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/background_color"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <ImageView
+                android:id="@+id/view_background_color"
+                android:background="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="status:"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <TextView
+                android:gravity="center_vertical|start"
+                android:id="@+id/tv_text_size"
+                android:layout_width="0dp"
+                android:textSize="@dimen/text_size_medium"
+                android:text="active"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_customize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customize"
+        android:layout_below="@id/settings"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+
+        android:id="@+id/btn_show_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_list"
+        android:layout_below="@id/btn_customize"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
