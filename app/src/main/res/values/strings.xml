@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SwimApp4</string>
+    <string name="author">Bartosz Binkiewicz 223982</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_car_found">No car found</string>
+    <string name="car_brand">marka:</string>
+    <string name="car_model">model:</string>
+    <string name="car_horse_power">moc:</string>
+    <string name="capacity">ładowność(t):</string>
+
+    <string name="cars">samochody</string>
+    <string name="trucks">ciężarówki</string>
+    <string name="add">dodaj</string>
+    <string name="select_type">wybierz rodzaj:</string>
+    <string name="add_vehicle">Dodaj nowy pojazd</string>
+    <string name="type_something">wpisz coś</string>
+    <string name="checkbox1">checkbox1</string>
+    <string name="checkbox2">checkbox2</string>
+    <string name="tab1">tab1</string>
+    <string name="tab2">tab2</string>
+    <string name="find_location">znajdz</string>
+    <string name="display_alarms">display alarms</string>
+
+
+</resources>
