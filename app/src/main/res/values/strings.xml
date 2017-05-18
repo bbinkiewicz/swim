@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MenuApp</string>
+    <string name="menu">menu:</string>
+    <string name="none">none</string>
+    <string name="submenu">submenu:</string>
+    <string name="second_activity">second activity</string>
+    <string name="item_1">item 1</string>
+    <string name="item_2">item 2</string>
+    <string name="item_3">item 3</string>
+    <string name="item_4">submenu</string>
+    <string name="submenu_1">submenu item 1</string>
+    <string name="submenu_2">submenu item 2</string>
+</resources>
