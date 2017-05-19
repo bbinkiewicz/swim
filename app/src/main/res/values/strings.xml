@@ -10,4 +10,14 @@
     <string name="item_4">submenu</string>
     <string name="submenu_1">submenu item 1</string>
     <string name="submenu_2">submenu item 2</string>
+    <string name="delete">delete</string>
+    <string name="highlight">highlight</string>
+    <string name="_15sp">15sp</string>
+    <string name="_25sp">25sp</string>
+    <string name="blank_text"> </string>
+    <string name="type_1">type 1</string>
+    <string name="type_2">type 2</string>
+    <string name="normal">normal</string>
+    <string name="large">large</string>
+    <string name="placeholder">placeholder</string>
 </resources>
